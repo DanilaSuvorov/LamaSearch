@@ -3,6 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <title>LamaSearch</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=s.." rel="stylesheet">
 </head>
 
 <body>
@@ -12,6 +15,48 @@
 <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+
+<!— <div class="page"> —>
+  <nav class="menu">
+    <div class="logo"></div>
+    <ul>
+      <li>Войти</li>
+      <li>Регистрация</li>
+    </ul>
+  </nav>
+  <div class="rainbow"></div>
+  <div class="white">
+    <div class="text">
+      <h1>LamaSearch</h1>
+      <h2>Найди интересную идею,
+        подходящую твоим кодерским навыкам</h2>
+    </div>
+    <input type="text">
+
+    <ul class="stickers">
+      <li class="first">
+        <h3>ANDROID</h3>
+        <p class="p1">Java; Open Server;
+          ABC; D_storm</p>
+        <p>Приложение для
+          знакомств по инетерсам </p>
+      </li>
+      <li class="second">
+        <h3>DESKTOP</h3>
+        <p class="p1">C#</p>
+        <p>Мини-фотошоп для обработки групповых фотографий</p>
+      </li>
+      <li class="third">
+        <h3>БОТ</h3>
+        <p class="p1">Python, F#, OpenBase</p>
+        <p>Бот прогноза погоды</p>
+
+
+      </li>
+    </ul>
+  </div>
+  <!— </div> —>
+
 
 <script>
   // Your web app's Firebase configuration
@@ -42,6 +87,166 @@
   console.log(arr);
 
 </script>
+
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  .page{
+    width: 98%;
+    min-height: 96vh;
+    padding: 2vh 1%;
+  }
+  body{
+    font-family: 'Poppins', sans-serif;
+  }
+
+  nav{
+    display: flex;
+    z-index: 20;
+    height: 24px;
+    width: 98%;
+    padding: 2vh 1%;
+    background-color: #94A3A4;
+    justify-content: flex-start;
+    position: fixed;
+  }
+  nav .logo{
+    /* background-image: "alpaca.png" */
+    width: 10%;
+  }
+  nav ul{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: flex-start;
+  }
+  nav ul li{
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 20px;
+    color: white;
+  }
+  .rainbow{
+    background-image: url(https://psv4.userapi.com/c848324/u300046244/docs/d6/2..);
+    background-size: cover;
+    width: 36%;
+    padding: 2vh 1%;
+    height: 96vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -5;
+  }
+  .white{
+    background-color: white;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 60%;
+    /* padding: 2vh 1%; */
+    height: 96vh;
+    z-index: 1;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .white:before{
+    content: '';
+    position: absolute;
+    height: 96vh;
+    display: block;
+    right: -300px;
+    padding: 2vh 1%;
+    border-radius: 0 50% 50% 0;
+    width: 54%;
+    background-color: white;
+    z-index: -1;
+  }
+  .text{
+    display: flex;
+    flex-direction: wrap;
+    width: 100%;
+  }
+  h1{
+    margin-left: 20%;
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+  }
+  h2{
+    color: #E878AA;
+    margin-top: 15%;
+    padding-left: 30px;
+    line-height: 27px;
+    min-width: 350px;
+    font-weight: 300;
+    /* min-height: 100px;
+    */ font-size: 20px;
+  }
+  input{
+    margin-left: 20%;
+    margin-top: 30px;
+    width: 80%;
+    height: 60px;
+    font-size: 30px;
+  }
+  .stickers{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 55px;
+    margin-left: 55px;
+  }
+  .stickers li{
+    display: flex;
+    border-radius: 20px;
+    height: 230px;
+    width: 230px;
+    margin: 20px;
+    padding: 0 10px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  .stickers li h3{
+    position: absolute;
+    top: -30px;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  .stickers li p{
+    color: white;
+    margin-top: 10px;
+    padding: 10px 10px;
+    font-size: 20px;
+    min-width: 150px;
+    font-weight: 200;
+    margin-bottom: 10px;
+  }
+  .stickers li .p1{
+    border-bottom: 1px solid #000000;
+  }
+  .stickers .first{
+    background-color: #C573AF;
+  }
+  .stickers .second{
+    background-color: #E878AA;
+  }
+  .stickers .third{
+    background-color: #8F9BDC;
+  }
+
+
+</style>
 
 </body>
 
