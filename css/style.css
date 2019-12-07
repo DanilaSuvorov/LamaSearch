@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  cursor: default; }
+
+nav {
+  background-color: grey;
+  height: 10vh;
+  width: 100%; }
+nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none; }
+nav ul li {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+  transition: color 0.5s ease; }
+nav ul li:hover {
+  color: #E878AA; }
+
+body {
+  font-family: "Poppins", sans-serif; }
+
+#main {
+  display: flex;
+  height: 90vh; }
+#main .search {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+#main .search .title {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  flex-wrap: wrap; }
+#main .search .title h1 {
+  font-size: 45px;
+  font-weight: normal;
+  margin: 10px; }
+#main .search .title p {
+  color: #E878AA;
+  margin: 10px;
+  font-size: 15px; }
+#main .search .title .searching {
+  display: flex;
+  width: 100%;
+  align-items: center; }
+#main .search .title .searching input {
+  width: 100%;
+  border: 0.5px solid grey;
+  border-radius: 2px;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 5px;
+  color: grey;
+  cursor: text; }
+#main .search .title .searching button {
+  margin-left: 20px;
+  background-color: #E878AA;
+  height: 30px;
+  width: 100px;
+  border: 1px solid lightgrey;
+  color: white;
+  border-radius: 2px; }
+#main .search .title .lable {
+  display: flex; }
+#main .search .cards {
+  width: 80%;
+  margin: 50px 10%;
+  cursor: default; }
+#main .search .cards ul {
+  display: flex;
+  justify-content: space-between; }
+#main .search .cards ul li {
+  width: 250px;
+  list-style: none; }
+#main .search .cards ul li:nth-child(1) .card {
+  background-color: #C573AF; }
+#main .search .cards ul li:nth-child(2) .card {
+  background-color: #E878AA; }
+#main .search .cards ul li:nth-child(3) .card {
+  background-color: #8F9BDC; }
+#main .search .cards ul li p {
+  font-size: 20px;
+  margin-left: 20px; }
+#main .search .cards ul li p span {
+  font-size: 15px;
+  color: red; }
+#main .search .cards ul li .type {
+  transition: color 0.5s ease; }
+#main .search .cards ul li .type:hover {
+  color: #E878AA; }
+#main .search .cards ul li .card {
+  min-height: 200px;
+  background-color: darkblue;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 20px; }
+#main .search .cards .skills {
+  color: white;
+  border-bottom: 2px solid black;
+  padding: 5px; }
+#main .search .cards .description {
+  padding: 5px;
+  color: white; }
+#main .items {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: stretch;
+  overflow: hidden; }
+#main .items li {
+  list-style: none;
+  text-align: right;
+  padding: 16px;
+  font-size: 24px;
+  position: relative; }
+#main .items li:nth-child(1) {
+  background-color: #C573AF; }
+#main .items li:nth-child(2) {
+  background-color: #E878AA; }
+#main .items li:nth-child(3) {
+  background-color: #F29747; }
+#main .items li:nth-child(4) {
+  background-color: #F4D84F; }
+#main .items li:nth-child(5) {
+  background-color: #CDDA59; }
+#main .items li:nth-child(6) {
+  background-color: #86C877; }
+#main .items li:nth-child(7) {
+  background-color: #56A5B0; }
+#main .items li:nth-child(8) {
+  background-color: #85CBD9; }
+#main .items li:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #0000; }
+#main .items li:hover:before {
+  background-color: #ffffff5e; }
+#main .items:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 220px;
+  border-radius: 0 100% 100% 0;
+  background-color: white;
+  transform: translateX(-50%);
+  z-index: 2; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Poppins", sans-serif; }
+body .header {
+  display: flex;
+  justify-content: flex-end;
+  width: 96%;
+  padding: 20px; }
+body .header .headerContent {
+  display: flex;
+  flex-direction: column; }
+body .header .headerContent .enter {
+  color: #C573AF;
+  font-size: 20px;
+  transition: color 0.5s ease; }
+body .header .headerContent .enter:hover {
+  color: #86C877; }
+body .content {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  justify-content: center; }
+body .content .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  padding: 20px; }
+body .content .title h1 {
+  font-weight: normal;
+  font-size: 40px;
+  letter-spacing: 2px; }
+body .content .title p {
+  font-weight: lighter;
+  font-size: 15px;
+  letter-spacing: 2px; }
+body .content .title .inputs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+body .content .title .inputs input {
+  width: 50%;
+  height: 25px;
+  margin: 20px;
+  padding: 2px 10px 2px 8px;
+  font-size: 15px;
+  letter-spacing: 1px; }
+body .content .title .buttons {
+  display: flex;
+  justify-content: wrap; }
+body .content .title .buttons button {
+  margin: 15px;
+  padding: 5px 20px 5px 20px;
+  font-size: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 2px; }
+body .content .title .buttons .vk {
+  background-color: #6276BB; }
+body .content .title .buttons .go {
+  background-color: #86C877; }
+
+body {
+  font-family: "Poppins", sans-serif; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+.mainContent {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+.mainContent .title {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  border-bottom: 1px solid #6276BB; }
+.mainContent .title h2 {
+  font-size: 30px;
+  font-weight: normal; }
+.mainContent .languages {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgrey;
+  padding: 10px;
+  margin-top: 40px; }
+.mainContent .description {
+  display: inline-block;
+  width: 50%;
+  padding-top: 30px; }
+
+/*# sourceMappingURL=style.css.map */

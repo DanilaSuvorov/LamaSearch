@@ -1,60 +1,97 @@
-<!doctype html>
-<body class="no-js" lang="">
-
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>LamaSearch</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Poppins&display=s.." rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Newnewnewnewnew</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 </head>
-
-
+<body>
 <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
-
-<!— <div class="page">
-  <nav class="menu">
-    <div class="logo"></div>
-    <ul>
-      <li>Войти</li>
-      <li>Регистрация</li>
-    </ul>
-  </nav>
-  <div class="rainbow"></div>
-  <div class="white">
-    <div class="text">
-      <h1>LamaSearch</h1>
-      <h2>Найди интересную идею,
-        подходящую твоим кодерским навыкам</h2>
+<script src = "js/apps.js"> </script>
+<nav>
+  <ul>
+    <li>lama</li>
+    <li>Войти</li>
+    <li>Регистрация </li>
+  </ul>
+</nav>
+<section id="main">
+  <div class="search">
+    <div class="title">
+      <div class="lable">
+        <h1>LamaSearch</h1>
+        <p>Найди интересную идею, подходящую твоим кодерским навыкам</p>
+      </div>
+      <div class="searching">
+        <input type="text" placeholder="Укажи языки и фраймворки " id="input">
+        <button id="myElement">Найти</button>
+      </div>
     </div>
-    <input type="text" id="input">
-
-    <ul class="stickers">
-      <li class="first">
-        <h3>ANDROID</h3>
-        <p class="p1">Java; Open Server;
-          ABC; D_storm</p>
-        <p>Приложение для
-          знакомств по инетерсам </p>
-      </li>
-      <li class="second">
-        <h3>DESKTOP</h3>
-        <p class="p1">C#</p>
-        <p>Мини-фотошоп для обработки групповых фотографий</p>
-      </li>
-      <li class="third">
-        <h3>БОТ</h3>
-        <p class="p1">Python, F#, OpenBase</p>
-        <p>Бот прогноза погоды</p>
-
-
-      </li>
-    </ul>
+    <div class="cards">
+      <ul>
+        <li>
+          <p class="type">android
+            <span>
+								сложно
+							</span>
+          </p>
+          <div class="card">
+            <p class="skills"  id="lang1">
+              Java; Open Server; ABC; D_storm
+            </p>
+            <p class="description" id="des1">
+              Приложение для знакомств по инетерсам
+            </p>
+          </div>
+        </li>
+        <li>
+          <p class="type">android
+            <span>
+								сложно
+							</span>
+          </p>
+          <div class="card">
+            <p class="skills"  id="lang2">
+              Java; Open Server; ABC; D_storm
+            </p>
+            <p class="description" id="des2">
+              Приложение для знакомств по инетерсам
+            </p>
+          </div>
+        </li>
+        <li>
+          <p class="type">android
+            <span>
+								сложно
+							</span>
+          </p>
+          <div class="card">
+            <p class="skills"  id="lang3">
+              Java; Open Server; ABC; D_storm
+            </p>
+            <p class="description" id="des3">
+              Приложение для знакомств по инетерсам
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
-  </div>
-    <script src = "js/apps.js"> </script>
+  <ul class="items">
+    <li>Frontend</li>
+    <li>Frontend</li>
+    <li>Frontend</li>
+    <li>Frontend</li>
+    <li>Frontend</li>
+    <li>Frontend</li>
+    <li>Frontend</li>
+    <li>Frontend</li>
+  </ul>
+</section>
 </body>
 </html>

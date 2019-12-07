@@ -13,33 +13,51 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
-var count = 5;
-let arr = [];
-
-if(document.getElementById("btn").onclick === true){
-    var answer = document.getElementById("input").value;
-}
-
-if(arr.indexOf(answer) !== -1){
-    for(var i = 1; i <= count; i++) {
-        var ref = firebase.database().ref().child("Framework").child('NET').child(answer).child('idea' + i);
+function Main(){
+    let get = document.getElementById('input').value;
+    var c = 1;
+    function Equal(i, ref){
         ref.on("value", function (snapshot) {
-            console.log(snapshot.val());
+            ans = snapshot.val();
+            if(ans === get){
+                console.log(i);
+                document.getElementById("lang" + c).innerHTML = get;
+                Des(i, c);
+                c++;
+            }
         });
     }
+
+    function Des(i, c){
+        var des;
+        var re = firebase.database().ref().child("ideas").child(i).child("des");
+        re.on("value", function (snapshot) {
+            des = snapshot.val();
+            document.getElementById("des" + c).innerHTML = des;
+        });
+    }
+
+
+    var count = 28;
+    for(var i = 1; i <= count; i++) {
+        for(var j = 0; j <= 5; j++ ) {
+            var ref = firebase.database().ref().child("ideas").child(i).child(j);
+            Equal(i, ref);
+        }
+    }
 }
+document.getElementById('myElement').onclick = Main;
 
 
-console.log(arr);
 
-var tagToQuery = answer;
+/*var tagToQuery = answer;
 ref.once('value', function(snapshot) {
     snapshot.forEach(function(childSnapshot) {
         var childData = childSnapshot.val();
         console.log(childData.name)
         // ...
     });
-});
+});*/
 
 
 
